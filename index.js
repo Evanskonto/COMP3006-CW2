@@ -7,7 +7,6 @@ const userRoute = require("./routes/user");
 const productRoute = require("./routes/product");
 const orderRoute = require("./routes/order");
 
-const cors = require("cors");
 
 
 dotenv.config();
