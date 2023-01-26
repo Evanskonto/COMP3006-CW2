@@ -258,45 +258,9 @@ section {
     margin: 1rem 0;
 }
 
-.contact .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.contact .row form {
-    padding: 2rem;
-    flex: 1 1 42rem;
-    box-shadow: var(--box-shadow);
-    border: var(--border);
-    text-align: center;
-    border-radius: .5rem;
-}
-
-.contact .row form h3 {
-    font-size: 3rem;
-    color: var(--black);
-    padding-bottom: 1rem;
-}
-
-.contact .row form .box {
-    width: 100%;
-    border-radius: .5rem;
-    padding: 1rem 1.2rem;
-    font-size: 1.6rem;
-    text-transform: none;
-    border: var(--border);
-    margin: .7rem 0;
-}
-
-.contact .row form textarea {
-    height: 15rem;
-    resize: none;
-}
-
 .footer {
     background: #84e184;
-    padding-bottom: 8rem;
+    padding-bottom: 17rem;
 }
 
 .footer .box-container {
@@ -306,14 +270,14 @@ section {
 }
 
 .footer .box-container .box h3 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     padding: 1rem 0;
     color: var(--black);
 }
 
 .footer .box-container .box a {
     display: block;
-    font-size: 1.4rem;
+    font-size: 2rem;
     padding: 1rem 0;
     color: var(--light-color);
 }
@@ -333,7 +297,7 @@ section {
     padding-top: 2.5rem;
     margin-top: 2rem;
     border-top: var(--border);
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--black);
 }
 
@@ -342,7 +306,7 @@ section {
 }
 
 .heading {
-    font-weight: 500;
+    font-weight: 800;
     color: var(--main-color);
 }
 
@@ -369,12 +333,13 @@ section {
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 2rem;
+    margin-bottom: 6rem;
 }
 
 .cars-container .box {
     flex: 1 1 17rem;
     position: relative;
-    height: 200px;
+    height: 300px;
     border-radius: 0.5rem;
     overflow: hidden;
 }
@@ -382,21 +347,21 @@ section {
 .cars-container .box2 {
     flex: 1 1 17rem;
     position: relative;
-    height: 200px;
+    height: 300px;
     border-radius: 0.5rem;
     overflow: hidden;
 }
 
 .cars-container .box img {
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     object-fit: cover;
     overflow: hidden;
 }
 
 .cars-container .box2 img {
-    width: 65%;
-    height: 80%;
+    width: 80%;
+    height: 90%;
     object-fit: cover;
     overflow: hidden;
 }
@@ -409,6 +374,12 @@ section {
 .cars-container .box2 img:hover {
     transform: scale(1.1);
     transition: 0.5s;
+}
+
+.car-text h2 {
+    font-size: 25px;
+    position: relative;
+    text-align: center;
 }
 
 .sidenav a {
@@ -439,25 +410,26 @@ section {
 }
 
 .about img {
-    flex: 1 1 21rem;
+    width: 38%;
+    height: 35%;
+    object-fit: cover;
+    overflow: hidden;
+    position: center;
 }
 
 .about-text {
-    flex: 1 1 21rem;
-}
-
-.about-text span {
-    color: var(--main-color);
-    font-size: 5rem;
+    flex: 21px;
     text-align: center;
 }
 
 .about-text h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    position: relative;
 }
 
 .about-text p {
-    font-size: 15px;
+    font-size: 20px;
+    text-transform: none;
 }
 
 @media screen and (max-height: 450px) {
