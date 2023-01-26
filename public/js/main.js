@@ -45,7 +45,7 @@ function fetchProducts() {
         });
 }
 
-
+// function for adding products to cart
 function addToCart(productID) {
     const selectedProduct = productList.find(element => element._id === productID);
     const productOrder = JSON.parse(JSON.stringify(selectedProduct));
@@ -58,12 +58,12 @@ function addToCart(productID) {
     cart.push(productOrder);
     updateCart();
 }
-
+//remove items from cart
 function removeFromCart(productID) {
     cart = cart.filter(element => element._id != productID);
     updateCart();
 }
-
+//update items from cart
 function updateCart() {
     const cartNav = document.getElementById("mySidenav");
     cartNav.innerHTML = "<div style='padding-top:100px'></div>";
@@ -125,6 +125,7 @@ function login() {
         });
 }
 
+//register to the website with a unique username,email,pass
 function register() {
     const email = document.getElementById("registerEmail").value;
     const username = document.getElementById("registerUsername").value;
