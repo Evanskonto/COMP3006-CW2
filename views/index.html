@@ -74,8 +74,13 @@
     <div class="login-form-container">
         <form action="">
             <h3>user login</h3>
-            <input type="email" placeholder="email" class="box" id="loginEmail">
-            <input type="password" placeholder="password" class="box" id="loginPassword">
+            <div class="input-box">
+                <input type="email" placeholder="email" class="box" id="loginEmail">
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="password" id="loginPassword">
+                <i id="hide1" class='bx bx-low-vision'></i>
+            </div>
             <p> forget your password <a href="#">click here</a> </p>
             <button type="button" onclick="login()" class="btn">Login</button>
             <p>or login with</p>
