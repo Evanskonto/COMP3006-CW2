@@ -21,10 +21,10 @@
 
 
         <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="Cars.html">Cars</a>
-            <a href="products.html">products</a>
-            <a href="About.html">About Us</a>
+            <a href="#home">Home</a>
+            <a href="#cars">Cars</a>
+            <a href="#products">products</a>
+            <a href="#About Us">About Us</a>
         </nav>
 
         <!--search icon-->
@@ -34,10 +34,13 @@
             <input type="search" name="" id="" placeholder="Search here"> </div>
 
 
-        <!--<div id="login-btn">
-            <button class="btn">login</button>
-            <i class="user"></i>
-        </div>-->
+        <nav class="navbar">
+            <a id="username"></a>
+        </nav>
+
+        <div onclick="openNav()">
+            <button class="btn" onclick="openNav()">Cart</button>
+        </div>
 
     </header>
 
@@ -60,38 +63,34 @@
         </form>
 
     </div>-->
+    <div id="mySidenav" class="sidenav">
+        <div style="padding-top:300px"><a>Cart is empty</a></div>
+    </div>
 
-    <section class="home" id="home">
-        <!--
-        <h3 data-speed="-2" class="home-parallax">find your part</h3>
+    <section class="cars" id="cars">
+        <div class="heading">
+            <span>We have different types of cars</span>
 
-        <img data-speed="5" class="home-parallax" src="image/home-img.png" alt="">
 
-        <a data-speed="7" href="#" class="btn home-parallax">explore parts</a>-->
+        </div>
+        <div class="cars-container container">
+            <div class=" box">
+                <img src="/static/images/audi.jpg" alt="">
+                <h2>Audi Car</h2>
+            </div>
+            <div class=" box2">
+                <img src="/static/images/mercedes.jpeg" alt="">
+                <h2>Mercedes Car</h2>
+
+            </div>
+            <div class=" box">
+                <img src="/static/images/BMW.jpg" alt="">
+                <h2>Bmw Car</h2>
+            </div>
+        </div>
 
     </section>
 
-    <div class="login-form-container">
-        <form action="">
-            <h3>user login</h3>
-            <div class="input-box">
-                <input type="email" placeholder="email" class="box" id="loginEmail">
-            </div>
-            <div class="input-box">
-                <input type="password" placeholder="password" id="loginPassword">
-                <i id="hide1" class='bx bx-low-vision'></i>
-            </div>
-            <p> forget your password <a href="#">click here</a> </p>
-            <button type="button" onclick="login()" class="btn">Login</button>
-            <p>or login with</p>
-            <div class="buttons">
-                <a href="#" class="btn"> google </a>
-                <a href="#" class="btn"> facebook </a>
-            </div>
-            <p> don't have an account <a href="/register.html">create one</a> </p>
-        </form>
-
-    </div>
 
 
     <section class="footer" id="footer">
