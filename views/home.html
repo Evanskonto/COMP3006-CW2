@@ -35,7 +35,7 @@
 
 
         <div id="login-btn">
-            <button class="btn">login</button>
+            <button id="var-btn">login</button>
             <i class="user"></i>
         </div>
 
@@ -66,7 +66,7 @@
 
             <div class="box">
                 <h3>quick links</h3>
-                <a href="index.html"> <i class="arrow-right"></i> home </a>
+                <a href="home.html"> <i class="arrow-right"></i> home </a>
                 <a href="Cars.html"> <i class="arrow-right"></i> Cars </a>
                 <a href="products.html"> <i class="arrow-right"></i> products </a>
                 <a href="About.html"> <i class="arrow-right"></i> About Us </a>
@@ -96,6 +96,12 @@
     </section>
 
     <script src="/static/js/main.js"></script>
+    <script>
+        var button = document.getElementById("var-btn");
+        button.addEventListener("click", function() {
+            window.location.href = "index.html";
+        });
+    </script>
 
 </body>
 
