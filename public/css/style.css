@@ -173,69 +173,59 @@ section {
     display: none;
 }
 
-.payment-form-container {
-    display: flex;
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, .9);
     z-index: 10000;
 }
 
-.payment-form-container.active {
-    top: 0;
-}
-
-.payment-form-container form {
-    margin: 2rem;
+.container h2 {
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    color: var(--black);
+    text-transform: uppercase;
     text-align: center;
-    padding: 2rem;
-    width: 40rem;
-    border-radius: .5rem;
-    box-shadow: var(--box-shadow);
-    border: var(--border);
-    background: #fff;
 }
 
-.payment-form-container form .btn {
+form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-top: 10px;
     display: block;
     width: 100%;
     margin: .5rem 0;
 }
 
-.payment-form-container form .input-box {
-    margin: .7rem 0;
+input[type="text"] {
     width: 100%;
-    font-size: 1.6rem;
-    color: var(--black);
-    text-transform: none;
-    border: var(--border);
-    padding: 1rem 1.2rem;
-    border-radius: .5rem;
-}
-
-.payment-form-container form p {
-    padding: 1rem 0;
-    font-size: 1.5rem;
-    color: var(--light-color);
-}
-
-.payment-form-container form p a {
-    color: #84e184;
-    text-decoration: underline;
-}
-
-.payment-form-container form h3 {
-    padding-bottom: 1rem;
-    font-size: 2.5rem;
-    color: var(--black);
-    text-transform: uppercase;
-}
-
-.success-message {
-    display: none;
-    color: green;
-    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
     text-align: center;
+}
+
+.alert {
+    font-size: 20px;
+    color: red;
 }
 
 .login-form-container {

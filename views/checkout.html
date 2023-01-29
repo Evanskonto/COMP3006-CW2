@@ -43,36 +43,30 @@
 
     </section>
 
-    <div class="payment-form-container">
-        <form action="">
-            <h3>Payment Details
-            </h3>
-            <div class="input-box">
-                <label for="card-number">Card Number:</label>
-                <input type="text" id="card-number" placeholder="1234 1234 1234 1234">
+    <div class="container">
+        <h2>Payment Details</h2>
+        <form>
+            <div class="form-group">
+                <label for="cardNumberInput">Card Number:</label>
+                <input type="text" class="form-control" id="cardNumberInput" placeholder="1234 1234 1234 1234">
             </div>
-            <div class="input-box">
-                <label for="card-name">Name on Card:</label>
-                <input type="text" id="card-name" placeholder="John Doe">
+            <div class="form-group">
+                <label for="cardNumberInput">Card Name:</label>
+                <input type="text" class="form-control" id="cardNameInput" placeholder="John Doe">
             </div>
-            <div class="input-box">
-                <label for="expiration-date">Expiration Date:</label>
-                <input type="text" id="expiration-date" placeholder="MM/YY">
+            <div class="form-group">
+                <label for="expiryDateInput">Expiry Date:</label>
+                <input type="text" class="form-control" id="expiryDateInput" placeholder="MM/YY">
             </div>
-            <div class="input-box">
-                <label for="cvv">CVV:</label>
-                <input type="text" id="cvv" placeholder="123">
+            <div class="form-group">
+                <label for="cvvInput">CVV:</label>
+                <input type="text" class="form-control" id="cvvInput" placeholder="123">
             </div>
-            <button id="submit-btn" class="btn">Pay</button>
-
+            <button type="button" class="btn btn-primary" id="submitButton">Pay</button>
+            <br><br>
+            <div class="alert alert-danger" role="alert" id="resultContainer" style="display: none;"></div>
         </form>
-
-
     </div>
-    <div id="success-message" class="success-message">Payment Successful!!!
-
-    </div>
-
 
 
     <section class="footer" id="footer">
@@ -118,14 +112,10 @@
 
     </section>
 
-    <script src="/static/js/main.js"></script>
-    <script>
-        document.getElementById("submit-btn").addEventListener("click", function() {
-            document.getElementById("success-message").style.display = "block";
-        });
-    </script>
 
 </body>
 
 
 </html>
+
+<script src="/static/js/payment.js"></script>
