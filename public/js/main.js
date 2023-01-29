@@ -3,6 +3,7 @@ var productList = [];
 var cart = [];
 var isCartOpen = false;
 
+//Retrieve a list of products from a the API server and display them on the page
 function fetchProducts() {
     const username = document.getElementById("username");
     username.innerHTML = "Welcome, " + window.localStorage.getItem('username');
@@ -45,7 +46,7 @@ function fetchProducts() {
         });
 }
 
-// function for adding products to cart
+//  function adds a product to the cart when the "Add to Cart" button is clicked.
 function addToCart(productID) {
     const selectedProduct = productList.find(element => element._id === productID);
     const productOrder = JSON.parse(JSON.stringify(selectedProduct));
@@ -58,12 +59,12 @@ function addToCart(productID) {
     cart.push(productOrder);
     updateCart();
 }
-//remove items from cart
+//function removes a product from the cart when the "Remove from Cart" button is clicked.
 function removeFromCart(productID) {
     cart = cart.filter(element => element._id != productID);
     updateCart();
 }
-//update items from cart
+//The updateCart function updates the contents of the cart that are displayed on the page.
 function updateCart() {
     const cartNav = document.getElementById("mySidenav");
     cartNav.innerHTML = "<div style='padding-top:100px'></div>";
@@ -97,7 +98,7 @@ function updateCart() {
     });
 }
 
-//LOGIN
+//The login function logs in the user by sending a POST request to the API server with the provided email and password.
 function login() {
     const email = document.getElementById("loginEmail").value;
     const password = document.getElementById("loginPassword").value;
