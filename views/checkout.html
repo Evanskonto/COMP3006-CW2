@@ -64,7 +64,12 @@
                 <input type="text" id="cvv" placeholder="123">
             </div>
             <button id="submit-btn" class="btn">Pay</button>
+
         </form>
+
+
+    </div>
+    <div id="success-message" class="success-message">Payment Successful!!!
 
     </div>
 
@@ -114,6 +119,11 @@
     </section>
 
     <script src="/static/js/main.js"></script>
+    <script>
+        document.getElementById("submit-btn").addEventListener("click", function() {
+            document.getElementById("success-message").style.display = "block";
+        });
+    </script>
 
 </body>
 

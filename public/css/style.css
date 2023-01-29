@@ -231,6 +231,13 @@ section {
     text-transform: uppercase;
 }
 
+.success-message {
+    display: none;
+    color: green;
+    font-size: 20px;
+    text-align: center;
+}
+
 .login-form-container {
     display: flex;
     align-items: center;
