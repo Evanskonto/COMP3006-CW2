@@ -177,7 +177,6 @@ section {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    align-items: center;
     justify-content: center;
     z-index: 10000;
 }
@@ -268,7 +267,7 @@ input[type="text"] {
     width: 100%;
     font-size: 1.6rem;
     color: var(--black);
-    text-transform: none;
+    text-align: center;
     border: var(--border);
     padding: 1rem 1.2rem;
     border-radius: .5rem;
