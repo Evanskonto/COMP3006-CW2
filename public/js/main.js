@@ -92,6 +92,9 @@ function updateCart() {
     </div>
     `
     cartNav.appendChild(btn);
+    btn.addEventListener("click", function() {
+        window.location.href = "checkout.html";
+    });
 }
 
 //LOGIN

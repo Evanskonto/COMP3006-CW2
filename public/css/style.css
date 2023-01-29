@@ -173,6 +173,64 @@ section {
     display: none;
 }
 
+.payment-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, .9);
+    z-index: 10000;
+}
+
+.payment-form-container.active {
+    top: 0;
+}
+
+.payment-form-container form {
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+    width: 40rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    background: #fff;
+}
+
+.payment-form-container form .btn {
+    display: block;
+    width: 100%;
+    margin: .5rem 0;
+}
+
+.payment-form-container form .input-box {
+    margin: .7rem 0;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    border: var(--border);
+    padding: 1rem 1.2rem;
+    border-radius: .5rem;
+}
+
+.payment-form-container form p {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.payment-form-container form p a {
+    color: #84e184;
+    text-decoration: underline;
+}
+
+.payment-form-container form h3 {
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
 .login-form-container {
     display: flex;
     align-items: center;
