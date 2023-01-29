@@ -187,8 +187,5 @@ function closeNav() {
     "title": "Clutch",
     "desc": "Manual shift clutch",
     "img": "static/images/clutch.jpeg",
-    "categories":["Transmission"],
-    "size": "200x200mm",
-    "color": "Silver",
     "price": 500
 }`
