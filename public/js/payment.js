@@ -21,7 +21,7 @@ const validateInput = () => {
     }
     // Check if card name is not empty
     if (cardNameInput.value === "") {
-        resultContainer.innerHTML = "Card number is required.";
+        resultContainer.innerHTML = "Card Name is required.";
         resultContainer.style.display = "block";
         return false;
     }

@@ -420,14 +420,14 @@ input[type="text"] {
 }
 
 .cars-container .box img {
-    width: 90%;
+    width: 114%;
     height: 90%;
     object-fit: cover;
     overflow: hidden;
 }
 
 .cars-container .box2 img {
-    width: 80%;
+    width: 100%;
     height: 90%;
     object-fit: cover;
     overflow: hidden;
@@ -445,6 +445,18 @@ input[type="text"] {
 
 .car-text h2 {
     font-size: 25px;
+    position: relative;
+    text-align: center;
+}
+
+.box2 h3 {
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+}
+
+.box h3 {
+    font-size: 14px;
     position: relative;
     text-align: center;
 }
@@ -477,26 +489,27 @@ input[type="text"] {
 }
 
 .about img {
-    width: 38%;
-    height: 35%;
+    width: 110%;
+    height: 150%;
     object-fit: cover;
     overflow: hidden;
     position: center;
 }
 
 .about-text {
-    flex: 21px;
+    flex: 15px;
     text-align: center;
 }
 
 .about-text h2 {
-    font-size: 3.5rem;
+    font-size: 25px;
     position: relative;
 }
 
 .about-text p {
-    font-size: 20px;
+    font-size: 18px;
     text-transform: none;
+    position: relative;
 }
 
 @media screen and (max-height: 450px) {
